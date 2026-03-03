@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="Home - NorthCraft">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/512xnewNorthCraft.png" type="image/x-icon">
+    <meta name="description"
+        content="This is our official Website for the Minecraft Server NorthCraft.ge! Join now with 1.8-1.21+!">
+
+
+    <title>Home - NorthCraft</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/parallax/jarallax.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Fredoka+One:400&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One:400&display=swap">
+    </noscript>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css">
+
+    <style>
+        p {
+            font-family: "BPG Mrgvlovani", sans-serif;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e, #0f3460);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            height: 500px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .question {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .question-label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-option input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #007bff;
+        }
+
+        .radio-option label {
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .ip-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .ip-input:focus {
+            outline: none;
+            border-color: #007bff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .ip-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .copy-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .copy-btn:hover {
+            background: #218838;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            display: none;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 50px !important;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(45deg, #0056b3, #004085);
+            transform: translateY(-2px);
+        }
+
+        .close-btn {
+            position: absolute;
+            bottom: 10px;
+            margin: 10px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            height: 50px !important;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: #c82333;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .success-message {
+            color: #4caf50;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section data-bs-version="5.1" class="menu menu2 cid-tkbL8n4vab" once="menu" id="menu2-16">
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="#">
+                            <img src="https://cdn.discordapp.com/icons/1412075757974589562/4f339bb6241908848d3b3b0f368e1c53.webp"
+                                alt="" style="height: 3rem; margin-bottom: 5px;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7"
+                            href="#">NorthCraft.ge</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="index.html#features13-2">რა არის NorthCraft?</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="index.html#features24-4">როგორ შემოვიდე?</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="https://forum.NorthCraft.ge" target="_blank">ფორუმის კედელი</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="rules.html">წესები</a>
+                        </li>
+                           <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="contact.html">კონტაქტი</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4"
+                            href="https://NorthCraft.ge" target="_blank"><span
+                                class="mobi-mbri mobi-mbri-shopping-basket mbr-iconfont mbr-iconfont-btn"></span>მაღაზია&nbsp;</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section data-bs-version="5.1" class="header14 cid-tjqpRpO1sc mbr-fullscreen mbr-parallax-background"
+        id="header14-d">
+
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(1, 17, 26);"></div>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 image-wrapper">
+                    <img src="assets/images/512xnewNorthCraft.png" alt="">
+                </div>
+                <div class="col-12 col-md">
+                    <div class="text-wrapper">
+                        <div class="online">
+                            <div class="otarspan">
+                                <svg width="16px" height="16px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#2ee70088"
+                                        d="M11.8 18.93a.817.817 0 0 1 .07-.128.712.712 0 0 0-.09.2.182.182 0 0 1 .02-.07zm.21-.316c.01-.01.02-.01.03-.02a.643.643 0 0 0-.08.09.178.178 0 0 1 .05-.07z" />
+                                    <path fill="#2ee70088"
+                                        d="M11.8 18.93a.817.817 0 0 1 .07-.128.712.712 0 0 0-.09.2.182.182 0 0 1 .02-.07zm.24-.336a.643.643 0 0 0-.08.09.178.178 0 0 1 .05-.07c.01-.014.02-.014.03-.02zM17 6.954a1 1 0 0 1-.616-.21 11.4 11.4 0 0 0-14.71-.05A1 1 0 0 1 .262 6.63a.988.988 0 0 1 .064-1.4c.074-.075 8.122-7.196 17.29-.05a.988.988 0 0 1 .17 1.394 1 1 0 0 1-.786.38zM11.642 12.674a1.026 1.026 0 0 1-1.41-.12A1.933 1.933 0 0 0 9 11.912a1.936 1.936 0 0 0-1.23.645 1.026 1.026 0 0 1-1.412.12.982.982 0 0 1-.13-1.388A4.058 4.058 0 0 1 9 9.926a4.063 4.063 0 0 1 2.772 1.36.983.983 0 0 1-.13 1.387z" />
+                                    <path fill="#2ee70088"
+                                        d="M14.72 9.622a1 1 0 0 1-1.41.03A6.792 6.792 0 0 0 9 7.956a6.792 6.792 0 0 0-4.31 1.7 1 1 0 0 1-1.41-.03.99.99 0 0 1 .02-1.4A8.54 8.54 0 0 1 9 5.964a8.54 8.54 0 0 1 5.7 2.26.99.99 0 0 1 .02 1.398z" />
+                                    <ellipse fill="#2ee70088" cx="9" cy="14.882" rx="1" ry=".991" />
+                                </svg>
+
+
+                            </div>ონლაინ: <div class="otar">10</div>
+                        </div>
+                        <h4 class="mbr-section-title mb-3 display-1"><strong>NorthCraft</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-7">საქართველოს ყველაზე კაი Minecraft სერვერი. ჩვენი
+                            MiniGames - ებით : Bedwars, Factions, Survival, Skyblock და ჩვენი ექსკლუზიური თამაში :
+                            Become NPC !</p>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4"
+                                onclick="showLoginModal()" style="cursor: pointer;">სერვერზე შემოსვლა</a>
+                            <a class="btn btn-info-outline display-4" href="https://google.com" target="_blank">ფორუმის
+                                კედელი &gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="features12 cid-tjqffd3dFI" id="features13-2">
+
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="card-wrapper">
+                        <div class="card-box align-left">
+                            <h4 class="card-title mbr-fonts-style mb-4 display-2">
+                                <strong>რა არის NorthCraft?</strong>
+                            </h4>
+                            <p class="mbr-text mbr-fonts-style mb-4 display-7">საქართველოს პირველი სრულფასოვანი
+                                Minecraft სერვერი. ჩვენი მისიაა — ყველაზე საინტერესო ქართული გეიმინგ სივრცის
+                                შექმნა.!&nbsp;<br></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="item mbr-flex">
+                        <div class="icon-box">
+                            <span class="mbr-iconfont mobi-mbri-hearth mobi-mbri"></span>
+                        </div>
+                        <div class="text-box">
+                            <h4 class="icon-title mbr-black mbr-fonts-style display-7">
+                                <strong>სწრაფი სერვერი</strong>
+                            </h4>
+                            <h5 class="icon-text mbr-black mbr-fonts-style display-4">
+                                <div>მაღალი TPS, მინიმალური ლაგი — BurnedNodes პრემიუმ ჰოსტინგით. 24/7 შეუფერხებელი
+                                    გეიმპლეი.&nbsp;</div>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="item mbr-flex">
+                        <div class="icon-box">
+                            <span class="mbr-iconfont mobi-mbri-update mobi-mbri"></span>
+                        </div>
+                        <div class="text-box">
+                            <h4 class="icon-title mbr-black mbr-fonts-style display-7">
+                                <strong>ანტი-ჩეტი</strong>
+                            </h4>
+                            <h5 class="icon-text mbr-black mbr-fonts-style display-4">სრულყოფილი დაცვა ჰაკერებისგან და
+                                ექსპლოიტებისგან. სამართლიანი გეიმი ყველასთვის.</h5>
+                        </div>
+                    </div>
+                    <div class="item mbr-flex">
+                        <div class="icon-box">
+                            <span class="mbr-iconfont mobi-mbri-users mobi-mbri"></span>
+                        </div>
+                        <div class="text-box">
+                            <h4 class="icon-title mbr-black mbr-fonts-style display-7">
+                                <strong>ივენთები</strong>
+                            </h4>
+                            <h5 class="icon-text mbr-black mbr-fonts-style display-4">ტურნირები, სეზონური ღონისძიებები,
+                                ყოველ კვირა ახალი შინაარსი. გართობა გარანტირებულია!&nbsp;<div><br></div>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="features23 cid-tjqfAD0JSA" id="features24-4">
+
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(1, 17, 26);">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card-wrapper mb-4">
+                        <div class="card-box align-center">
+                            <h4 class="card-title mbr-fonts-style mb-4 display-2">
+                                <strong>როგორ შემოვიდე ?</strong>
+                            </h4>
+                            <p class="mbr-text mbr-fonts-style mb-4 display-7">
+                                მიყევი ქვემოთ მოცემულ 3 მარტივ დავალებას რათა შემოხვიდე ჩვენს სერვერზე!</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="item first mbr-flex p-4">
+                        <div class="icon-wrap w-100">
+                            <div class="icon-box">
+                                <span class="step-number mbr-fonts-style display-5">1</span>
+                            </div>
+                        </div>
+
+                        <div class="text-box">
+                            <h4 class="icon-title card-title mbr-black mbr-fonts-style display-7">
+                                <strong>ლაუნჩერი</strong>
+                            </h4>
+                            <h5 class="mbr-text mbr-black mbr-fonts-style display-4">ჩაიწერე ნებისმიერი Minecraft უფასო
+                                / ფასიანი ლაუნჩერი</h5>
+                        </div>
+                    </div>
+                    <!-- <span mbr-icon class="mbr-iconfont mobi-mbri-devices mobi-mbri"></span> -->
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="item mbr-flex p-4">
+                        <div class="icon-wrap w-100">
+                            <div class="icon-box">
+                                <span class="step-number mbr-fonts-style display-5">2</span>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <h4 class="icon-title card-title mbr-black mbr-fonts-style display-7">
+                                <strong>შეიყვანე ადრესი</strong>
+                            </h4>
+                            <h5 class="mbr-text mbr-black mbr-fonts-style display-4">შემოსვლის შემდეგ Multiplayer
+                                განყოფილებაში შეიყვანეთ "northcraft.ge"</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="item mbr-flex p-4">
+                        <div class="icon-wrap w-100">
+                            <div class="icon-box last-number">
+                                <span class="step-number mbr-fonts-style display-5">3</span>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <h4 class="last icon-title card-title mbr-black mbr-fonts-style display-7">
+                                <strong>თქვენ სერვერზეხართ!</strong>
+                            </h4>
+                            <h5 class="mbr-text mbr-black mbr-fonts-style display-4">მადლობას გიხდით ჩვენს სერვერზე
+                                შემოსვლისათვის წარმატებული თამაში</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="content7 cid-tjqfrB7rtr" id="content7-3">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <blockquote>
+                        <h5 class="mbr-section-title mbr-fonts-style mb-2 display-7"><strong>ჩვენს შესახებ:
+                                NorthCraft</strong></h5>
+                        <p class="mbr-text mbr-fonts-style display-4">საქართველოს პირველი სრულფასოვანი Minecraft
+                            სერვერი. ჩვენი მისიაა — ყველაზე საინტერესო ქართული გეიმინგ სივრცის შექმნა. ასევე სიამაყით
+                            გვაქვს BurnedNodes-ის ოფიციალური პარტნიორის სტატუსი. პრემიუმ ჰოსტინგი, მინიმალური ლაგი,
+                            მაქსიმალური სტაბილურობა.<br></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="info1 cid-tjqN7jdkCu" id="info1-11">
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(1, 17, 26);"></div>
+        <div class="align-center container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <h5 class="mbr-section-title mb-4 mbr-fonts-style display-1">
+                        <strong>გაწევრიანდი დისქორდზე &nbsp;</strong>
+                    </h5>
+
+                    <div class="mbr-section-btn"><a class="btn btn-primary display-4"
+                            href="https://discord.gg/n4NKWcZzvH" target="_blank">Discord ზე გაწევრიანება</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="content16 cid-tjqfD1HjQw" id="content16-5">
+
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="mbr-section-head align-center mb-4">
+                        <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2"><strong>შეკითხვები</strong></h3>
+
+                    </div>
+                    <div id="bootstrap-accordion_6" class="panel-group accordionStyles accordion" role="tablist"
+                        aria-multiselectable="true">
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse"
+                                    data-bs-toggle="collapse" data-core="" href="#collapse1_6" aria-expanded="false"
+                                    aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>შეკითხვა
+                                            1</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_6" class="panel-collapse noScroll collapse" role="tabpanel"
+                                aria-labelledby="headingOne" data-parent="#accordion"
+                                data-bs-parent="#bootstrap-accordion_6">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-4">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Ducimus voluptatibus provident quis ut a enim,
+                                        sint, totam suscipit ipsa veritatis quaerat magni. Nihil at reprehenderit,
+                                        perspiciatis atque ipsum consequuntur temporibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse"
+                                    data-bs-toggle="collapse" data-core="" href="#collapse2_6" aria-expanded="false"
+                                    aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>შეკითხვა
+                                            2</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse2_6" class="panel-collapse noScroll collapse" role="tabpanel"
+                                aria-labelledby="headingOne" data-parent="#accordion"
+                                data-bs-parent="#bootstrap-accordion_6">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatibus
+                                        provident quis ut a enim, sint, totam suscipit ipsa veritatis quaerat magni.
+                                        Nihil at reprehenderit, perspiciatis atque ipsum consequuntur temporibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse"
+                                    data-bs-toggle="collapse" data-core="" href="#collapse3_6" aria-expanded="false"
+                                    aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>შეკითხვა
+                                            3</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_6" class="panel-collapse noScroll collapse" role="tabpanel"
+                                aria-labelledby="headingOne" data-parent="#accordion"
+                                data-bs-parent="#bootstrap-accordion_6">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatibus
+                                        provident quis ut a enim, sint, totam suscipit ipsa veritatis quaerat magni.
+                                        Nihil at reprehenderit, perspiciatis atque ipsum consequuntur temporibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse"
+                                    data-bs-toggle="collapse" data-core="" href="#collapse4_6" aria-expanded="false"
+                                    aria-controls="collapse4">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>შეკითხვა
+                                            4</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse4_6" class="panel-collapse noScroll collapse" role="tabpanel"
+                                aria-labelledby="headingOne" data-parent="#accordion"
+                                data-bs-parent="#bootstrap-accordion_6">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatibus
+                                        provident quis ut a enim, sint, totam suscipit ipsa veritatis quaerat magni.
+                                        Nihil at reprehenderit, perspiciatis atque ipsum consequuntur temporibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse"
+                                    data-bs-toggle="collapse" data-core="" href="#collapse5_6" aria-expanded="false"
+                                    aria-controls="collapse5">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>შეკითხვა
+                                            5</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse5_6" class="panel-collapse noScroll collapse" role="tabpanel"
+                                aria-labelledby="headingOne" data-parent="#accordion"
+                                data-bs-parent="#bootstrap-accordion_6">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatibus
+                                        provident quis ut a enim, sint, totam suscipit ipsa veritatis quaerat magni.
+                                        Nihil at reprehenderit, perspiciatis atque ipsum consequuntur temporibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse"
+                                    data-bs-toggle="collapse" data-core="" href="#collapse6_6" aria-expanded="false"
+                                    aria-controls="collapse6">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>შეკითხვა
+                                            6</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse6_6" class="panel-collapse noScroll collapse" role="tabpanel"
+                                aria-labelledby="headingOne" data-parent="#accordion"
+                                data-bs-parent="#bootstrap-accordion_6">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-4">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatibus
+                                        provident quis ut a enim, sint, totam suscipit ipsa veritatis quaerat magni.
+                                        Nihil at reprehenderit, perspiciatis atque ipsum consequuntur temporibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="footer1 cid-tkbGMWG3Nn" once="footer" id="footer01-15">
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 my-auto px-4 align-left">
+                    <p class="mbr-text text-grey mb-0 mbr-fonts-style display-7">
+                        © Copyright 2026 <strong>NorthCraft</strong>. ყველა უფლება დაცულია.<br><a href="imprint.html"
+                            class="text-primary" target="_blank">Imprint </a>| <a href="privacy.html"
+                            class="text-primary" target="_blank">Privacy </a>| <a href="tos.html" class="text-primary"
+                            target="_blank">Terms of Service</a></p>
+
+                    <p class="wixel-text mbr-text text-grey mb-0 mbr-fonts-style display-7">
+                        საიტი დამზადებულია <a href="https://discord.gg/aaXNQAGB8B">wixel</a>- ის მიერ<br></p>
+                </div>
+                <div class="col-md-12 col-lg-6 px-4 align-right">
+                    <div class="social-list">
+                        <div class="soc-item">
+                            <a href="https://twitter.com" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://tiktok.com" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-tiktok socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://youtube.com" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://instagram.com" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://discord.gg/n4NKWcZzvH" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-discord socicon"></span>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-content">
+            <!-- Question 1 -->
+            <div id="question1">
+                <h2 class="modal-title">სერვერზე შემოსვლა</h2>
+
+                <div class="question">
+                    <label class="question-label">1. გაქვთ minecraft უფასო / ფასიანი ლაუნჩერი ჩაწერილი?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="yes" name="launcher" value="yes" required>
+                            <label for="yes">დიახ</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="no" name="launcher" value="no" required>
+                            <label for="no">არა</label>
+                        </div>
+                    </div>
+                    <div class="error-message" id="launcherError">გთხოვთ აირჩიოთ ერთ-ერთი ვარიანტი</div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="submit-btn" onclick="goToQuestion2()">შემდეგი</button>
+                    <button type="button" class="close-btn" onclick="closeModal()">დახურვა</button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div id="question2" style="display: none;">
+                <h2 class="modal-title">სერვერზე შემოსვლა</h2>
+
+                <div class="question">
+                    <label class="question-label">2. Multiplayer განყოფილებაში ჩაწერეთ ჩვენი IP address რათა
+                        შემოხვიდეთ:</label>
+                    <input type="text" class="ip-input" id="ipAddress" value="northcraft.ge" readonly>
+                    <button type="button" class="copy-btn" onclick="copyIPAndClose()">1 კოპირება და ჩაიხურება
+                        ფორმა!</button>
+                    <div class="error-message" id="ipError">IP მისამართის კოპირება აუცილებელია</div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="close-btn" onclick="closeModal()">დახურვა</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/parallax/jarallax.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/ytplayer/index.js"></script>
+    <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+
+    <script>
+        function showLoginModal() {
+            document.getElementById('loginModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            resetForm();
+        }
+
+        function closeModal() {
+            document.getElementById('loginModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            resetForm();
+        }
+
+        function goToQuestion2() {
+            const launcherSelected = document.querySelector('input[name="launcher"]:checked');
+            if (!launcherSelected) {
+                document.getElementById('launcherError').style.display = 'block';
+                return;
+            }
+
+            document.getElementById('launcherError').style.display = 'none';
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2').style.display = 'block';
+        }
+
+        function copyIPAndClose() {
+            const ipInput = document.getElementById('ipAddress');
+            ipInput.select();
+            ipInput.setSelectionRange(0, 99999);
+
+            navigator.clipboard.writeText(ipInput.value).then(function () {
+                const copyBtn = document.querySelector('.copy-btn');
+                const originalText = copyBtn.textContent;
+                copyBtn.textContent = '✓ კოპირებულია!';
+                copyBtn.style.background = '#4caf50';
+
+                document.getElementById('ipError').style.display = 'none';
+
+                setTimeout(() => {
+                    window.open('https://discord.gg/n4NKWcZzvH', '_blank');
+                    closeModal();
+                }, 1000);
+            }).catch(function () {
+                document.getElementById('ipError').style.display = 'block';
+            });
+        }
+
+        function resetForm() {
+            document.getElementById('loginForm')?.reset();
+            document.getElementById('launcherError').style.display = 'none';
+            document.getElementById('ipError').style.display = 'none';
+            document.getElementById('question1').style.display = 'block';
+            document.getElementById('question2').style.display = 'none';
+
+            const copyBtn = document.querySelector('.copy-btn');
+            if (copyBtn) {
+                copyBtn.textContent = '1 კოპირება და ჩაიხურება ფორმა!';
+                copyBtn.style.background = '#28a745';
+            }
+        }
+
+        document.getElementById('loginModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+
+    <input name="animation" type="hidden">
+</body>
+
+</html>
